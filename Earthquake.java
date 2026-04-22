@@ -58,4 +58,19 @@ public class Earthquake extends DisasterEvent {
         }
         System.out.println("Report generated Successfully");
     }
+    
+    //Getters
+    public double getMagnitude() {
+        return magnitude;
+    }
+    public String getDepth() {
+        return depth;
+    }
+    //Setters
+    public void setDepth(String depth) {
+        this.depth = depth;
+    }
+    public void setMagnitude(double magnitude) {
+        this.magnitude = magnitude;
+    }
 }
