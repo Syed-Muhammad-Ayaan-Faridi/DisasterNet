@@ -81,4 +81,30 @@ public class Flood extends DisasterEvent {
         }
         System.out.println("Report generated Successfully");
     }
+    // Getters 
+    public double getAffectedArea() {
+        return affectedArea;
+    }
+    public double getWaterLevel() {
+        return waterLevel;
+    }
+    public boolean getDamBreak(){
+        return this.isDamBreak;
+    }
+    public boolean getCoastalArea(){
+        return this.isCoastalArea;
+    }
+    public boolean getevacuationOrder(){
+        return this.evacuationOrdered;
+    }
+    //Setters 
+    public void setDamBreak(boolean isDamBreak) {
+        this.isDamBreak = isDamBreak;
+    }
+    public void setAffectedArea(double affectedArea) {
+        this.affectedArea = affectedArea;
+    }
+    public void setWaterLevel(double waterLevel) {
+        this.waterLevel = waterLevel;
+    }
 }
