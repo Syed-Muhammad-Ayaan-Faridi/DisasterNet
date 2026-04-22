@@ -58,4 +58,19 @@ public class WildFire extends DisasterEvent {
             this.report = "Event ID: %s | WildFire reported in %s at %s. Spread rate of wildfire is %f with a wind speed of %f. The priority level is %d/5. Evacuation required %b.".formatted(this.eventID, this.location, this.Timestamp, this.spreadRate, this.windSpeed, this.severitylevel, this.evacuationOrdered);
         System.out.println("Report generated Successfully");
     }
+    
+    //Getters
+    public double getSpreadRate() {
+        return spreadRate;
+    }
+    public double getWindSpeed() {
+        return windSpeed;
+    }
+    //Setters : used for updating the situation constantly 
+    public void setSpreadRate(double spreadRate) {
+        this.spreadRate = spreadRate;
+    }
+    public void setWindSpeed(double windSpeed) {
+        this.windSpeed = windSpeed;
+    } 
 }
