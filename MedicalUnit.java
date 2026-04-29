@@ -6,7 +6,6 @@ public class MedicalUnit extends Responder implements Deployable, Trackable, Rep
     private boolean bloodBankAvailable;
     private boolean isMobile;
     private int medicineStock;
-    private String currentZone;
 
     public MedicalUnit(int responderID, String name, int numberOfSkills, int doctorCount, int nurseCount, int bedCapacity, boolean bloodBankAvailable, boolean isMobile, int medicineStock) {
 
